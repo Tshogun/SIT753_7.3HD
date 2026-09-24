@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Demo</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <div>
+                <p class="eyebrow">SIT753 DEVOPS PROJECT</p>
+                <h1>Application Dashboard</h1>
+                <p class="subtitle">Node.js + Express + Docker</p>
+            </div>
+
+            <div id="status" class="status checking">
+                Checking...
+            </div>
+        </header>
+
+        <section class="card">
+            <h2>Service Health</h2>
+            <div class="health-row">
+                <span>Production API</span>
+                <strong id="health">Checking...</strong>
+            </div>
+            <button id="check-health">Check Health</button>
+        </section>
+
+        <section class="card">
+            <h2>Backend Information</h2>
+            <div class="info-grid">
+                <div>
+                    <span>Service</span>
+                    <strong id="service">-</strong>
+                </div>
+                <div>
+                    <span>Status</span>
+                    <strong id="backend-status">-</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>API Response</h2>
+            <pre id="response">Waiting for backend...</pre>
+        </section>
+    </main>
+
+    <script src="/app.js"></script>
+</body>
+</html>
