@@ -2,7 +2,7 @@ import express from "express";
 import helmet from "helmet";
 import pinoHttp from "pino-http";
 import type { RequestHandler } from "express";
-import path from "path";
+import path from "node:path";
 
 import routes from "@/routes";
 
