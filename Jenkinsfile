@@ -6,6 +6,7 @@ pipeline {
         IMAGE_NAME      = 'devops-demo'
         STAGING_PORT    = '5050'
         PRODUCTION_PORT = '5051'
+        PATH = "/opt/homebrew/bin:${env.PATH}"
     }
 
     stages {
